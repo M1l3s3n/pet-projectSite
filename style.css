@@ -166,7 +166,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    /* margin-top: 20px; */
 }
 
 .post {
@@ -195,7 +194,9 @@ body {
     position: absolute;
     z-index: 1;
     padding: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: 26.5px;
+    bottom: 0;
 }
 
 .poststext {
