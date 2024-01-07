@@ -44,10 +44,22 @@
                 <p class="poststext">All posts</p>
             </div>
             <div class="posts">
-                <div class="post post1" >Якийсь текст + якась картинка</div>
-                <div class="post post2" >Якийсь текст + якась картинка</div>
-                <div class="post post3" >Якийсь текст + якась картинка</div>
-                <div class="post post4" >Якийсь текст + якась картинка</div>
+                <div class="post post1" >
+                    <p>Якийсь текст + якась картинка</p>
+                    <img src="images/1.jpg">
+                </div>
+                <div class="post post2" >
+                    <p>Якийсь текст + якась картинка</p>
+                    <img src="images/2.jpg">
+                </div>
+                <div class="post post3" >
+                    <p>Якийсь текст + якась картинка</p>
+                    <img src="images/3.jpg">
+                </div>
+                <div class="post post4" >
+                    <p>Якийсь текст + якась картинка</p>
+                    <img src="images/4.jpg">
+                </div>
             </div>
         </div>
     </div>
@@ -57,17 +69,29 @@
             <div class="inner-box">
                 <div class="sub-box"> НАШІ ПРОЕКТИ</div> 
                 <div class="sub-box">
-                    <div class="sub-sub-box"></div>
-                    <div class="sub-sub-box"></div>
+                    <a href="" class="sub-sub-box">
+                        <p>Project 1</p>
+                        <p>Fainy project 1</p>
+                    </a>
+                    <a href="" class="sub-sub-box">
+                        <p>Project 2</p>
+                        <p>Fainy project 2</p>
+                    </a>
                 </div> 
                 <div class="sub-box">
-                    <div class="sub-sub-box"></div>
-                    <div class="sub-sub-box"></div>
+                    <a href="" class="sub-sub-box">
+                        <p>Project 3</p>
+                        <p>Fainy project 3</p>
+                    </a>
+                    <a href="" class="sub-sub-box">
+                        <p>Project 4</p>
+                        <p>Fainy project 4</p>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="right-box">
-            <img src="https://via.placeholder.com/400" alt="Зображення">
+            <img src="images/cat.jpg" alt="Зображення">
         </div>
     </div>
     <div class="additional-box">
@@ -79,40 +103,42 @@
         </div>
         <div class="contactinfo">
             <div class="contactbox">
+                <form action="<contact_form.php>" method="POST">
                     <div class="name">
-                        <div class="nametext" >Ім'я:*</div>
-                        <input class="entername" type="text" placeholder="Введіть своє ім'я:*">
+                        <div class="nametext">Ім'я:*</div>
+                        <input class="entername" type="text" name="name" placeholder="Введіть своє ім'я:*">
                     </div>
                     <div class="email">
                         <div class="emailtext">Ел.пошта:*</div>
-                        <input class="enteremail" type="email" placeholder="Введіть свою електронну пошту:*">
+                        <input class="enteremail" type="email" name="email" placeholder="Введіть свою електронну пошту:*">
                     </div>
                     <div class="number">
                         <div class="numbertext">Номер телефону:</div>
-                        <input class="enternumber" type="tel" placeholder="Введіть свій номер телефону:">
+                        <input class="enternumber" type="tel" name="number" placeholder="Введіть свій номер телефону:">
                     </div>
                     <div class="address">
                         <div class="addresstext">Адреса:</div>
-                        <input class="enteraddress" type="text" placeholder="Введіть свою адресу:">
+                        <input class="enteraddress" type="text" name="address" placeholder="Введіть свою адресу:">
                     </div>
                     <div class="topic">
                         <div class="topictext">Тема:</div>
-                        <input class="entertopic" type="text" placeholder="Введіть тему повідомлення:">
+                        <input class="entertopic" type="text" name="topic" placeholder="Введіть тему повідомлення:">
                     </div>
                     <div class="message">
                         <div class="messagetext">Повідомлення:</div>
-                        <input class="entermessage" type="text" placeholder="Введіть своє повідомлення:">
+                        <textarea class="entermessage" name="message" rows="5" cols="60" placeholder="Введіть своє повідомлення:"></textarea>
                     </div>
                     <div class="infobutton">
-                        <button class="enterinfo">Надіслати</button>
+                        <button class="enterinfo" type="submit">Надіслати</button>
                     </div>
+                </form>
             </div>
         </div>
     </div>
         <div id="map"></div>
             <footer>
                 <div class="footer-content">
-                    <p>©2023 by ФОП та Львівські Батяри</p>
+                    <p>©2024 by ФОП та Львівські Батяри</p>
                 </div>
             </footer>
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
