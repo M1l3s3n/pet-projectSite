@@ -1,0 +1,411 @@
+body {
+ 
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    max-width: 1920px;
+    
+
+}
+
+.header.hidden {
+    display: none;
+}
+
+#headername {
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 65px;
+    text-decoration: none;
+    font-size: 22px;
+    min-width: 260px;
+    
+}
+
+.container {
+    margin-top: 0; 
+    position: relative;
+    width: 100%;
+    height: 795px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container {
+    position: absolute;
+    top: 3vh;
+    left: 25vw;
+    right: 15vw;
+    bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 3; 
+    /* border: 1px solid rgb(255, 255, 255);  */
+    padding: 20px;
+    max-width: 600px;
+    min-width: 600px;
+}
+
+.large-text {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.small-text {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.button-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.button-container button {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-family: 'Krub', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: white;
+    color: black;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/test2.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1; 
+    opacity: 0.9; /*прозорість */
+}
+
+.transparent-box {
+    position: relative;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    color: aliceblue;
+}
+
+.inner-container {
+    background-color: rgb(250, 250, 250);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 100%;
+    height: 1263px;
+    display: flex;
+    flex-direction: column; /* Розміщення по вертикалі */
+    justify-content: center; /* Центрування елементів по вертикалі */
+    align-items: center;
+}
+
+.additional-container {
+    background-color: #00000000;
+    border: 1px solid black;
+    margin-left: 10%; 
+    margin-right: 10%; 
+    height: 1048px;
+    width: 980px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+.allposts {
+    height: 80px;
+    min-height: 80px;
+    width: 100%;
+    background-color: #ccc;
+    margin-top: 0;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.post {
+    flex-basis: calc(50% - 10px);
+    height: 454px;
+    margin-bottom: 10px; 
+    background-color: #ddd;
+}
+
+.poststext {
+    text-align: left;
+    line-height: 38px;
+    font-size: 19px;
+    margin-left: 18px;
+}
+
+.split-container {
+    display: flex;
+    min-height: 810px;
+    max-height: 810px;
+}
+
+.left-box,
+.right-box {
+    flex: 1;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.left-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+}
+
+.inner-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 600px; /* Фіксована ширина в пікселях */
+    height: 616px; /* Фіксована висота в пікселях */
+    background-color: #fff;
+}
+
+.sub-box {
+    background-color: #ccc;
+}
+
+.sub-box:first-child {
+    height: 15%;
+    width: calc(100% - 70px);
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 70px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.sub-box:nth-child(2),
+.sub-box:nth-child(3) {
+    border: 1px solid black;
+    height: 42.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-box:nth-child(2) .sub-sub-box,
+.sub-box:nth-child(3) .sub-sub-box {
+    width: 45%;
+    height: 100%;
+    min-height: 261px;
+    min-width: 261px;
+    max-height: 261px;
+    max-width: 261px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-box {
+    background-color: rgb(90, 90, 90);
+}
+
+.additional-box {
+    width: 100%;
+    height: 590px; 
+    background-color: rgb(0, 0, 0);
+    color: azure;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contact {
+    flex: 1;
+    max-width: calc(50% - 10vw);
+    min-width: 500px;
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 7vw; 
+}
+    
+.contacttext {
+    font-size: 48px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px;
+}
+
+.ourstreet {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.ouremail {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.ournumber {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.contactinfo {
+    flex: 1;
+    min-width: 500px;
+    height: 590px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.name, .email, .number, .address, .topic, .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 12px;
+}
+
+.infobutton {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.enterinfo {
+    width: 100%;
+    padding: 17px 20px;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.enterinfo:hover {
+    background-color: rgb(24, 24, 24);
+    color: azure;
+}
+
+.nametext, .emailtext, .numbertext, .addresstext, .topictext, .messagetext {
+    text-align: left;
+    margin-right: 40px;
+}
+
+.entername, .enteremail, .enternumber, .enteraddress, .entertopic, .entermessage {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 10px; 
+}
+
+.entertopic {
+    height: 30px;
+}
+
+.entermessage {
+    height: 70px;
+}
+
+
+#map {
+    width: 100%;
+    height: 470px; 
+}
+
+footer {
+    background-color: rgb(0, 0, 0); 
+    color: #fff; 
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0; 
+    height: 40px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.footer-content {
+    display: inline-block;
+}
+
+.leaflet-tile-pane {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+
+.leaflet-marker-icon {
+    filter: hue-rotate(145deg); 
+}
+
+
