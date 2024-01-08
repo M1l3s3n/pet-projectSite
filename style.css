@@ -371,6 +371,10 @@ body {
     margin-bottom: 12px;
 }
 
+.entermessage {
+    resize: none;
+}
+
 .infobutton {
     display: flex;
     justify-content: flex-end;
