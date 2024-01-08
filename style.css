@@ -398,6 +398,7 @@ body {
 .nametext, .emailtext, .numbertext, .addresstext, .topictext, .messagetext {
     text-align: left;
     margin-right: 40px;
+    margin-bottom: 10px;
 }
 
 .entername, .enteremail, .enternumber, .enteraddress, .entertopic, .entermessage {
