@@ -30,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Content
         $mail->isHTML(false);
+        $mail->CharSet = 'UTF-8';
         $mail->Subject = $topic;
         $mail->Body    = "Ім'я: $name\nЕл.пошта: $email\nНомер телефону: $number\nАдреса: $address\nТема: $topic\nПовідомлення: $message";
 
