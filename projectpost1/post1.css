@@ -1,0 +1,137 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.header {
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    min-width: 1920px;
+}
+
+#headername {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 65px;
+    text-decoration: none;
+    font-size: 22px;
+    min-width: 260px;
+}
+
+.main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 45px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    /* border: 0.1px solid black; */
+}
+
+.allposts,
+.general,
+.lastposts {
+    flex: 1;
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+.allposts {
+    height: 40px;
+    /* border: 1px solid grey; */
+    background-color: #fff !important;
+    display: flex;
+    align-items: center;
+}
+
+.allposts .alltext {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.general {
+    height: 1460px;
+    border: 1px solid grey;
+    background-color: #fff;
+}
+
+.lastposts {
+    height: 30px;
+    padding: 0;
+    /* border: 1px solid grey; */
+    background-color: #fff !important;
+    display: flex;
+    align-items: center;
+}
+
+.lastposts .text {
+    color: black;
+    max-width: 50%;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.lastposts .all {
+    color: black;
+    margin-left: auto;
+    text-decoration: none;
+    max-width: 50%;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.post1,
+.post2,
+.post3 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid grey;
+}
+
+.postgroup {
+    display: flex;
+    padding-bottom: 10px;
+    /* border: 1px solid black; */
+    height: 390px;
+}
+
+.post1,
+.post2,
+.post3 {
+    width: 100px; /* Задайте фіксовану ширину для кожного посту */
+    height: 340px; /* Задайте фіксовану висоту для кожного посту */
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    height: 40px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.footer-content {
+    display: inline-block;
+}
