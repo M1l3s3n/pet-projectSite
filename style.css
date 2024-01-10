@@ -169,10 +169,22 @@ body {
     left: 0;
     right: 0;
     border-top: 1px solid white;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     z-index: 5;
     width: 85%;
     margin: 0 auto;
+    color: black;
+}
+
+.postinfo h4 {
+    margin: 0;
+    margin-left: 47.14%;
+}
+
+.view-count {
+    margin-right: 5px;
+    text-decoration: none;
 }
 
 .post {
