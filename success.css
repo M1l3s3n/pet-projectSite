@@ -34,7 +34,6 @@ body {
 }
 
 #headername {
-
     color: rgb(255, 255, 255);
     text-align: center;
     margin-left: 65px;
@@ -42,6 +41,31 @@ body {
     font-size: 22px;
     min-width: 260px;
     
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(24, 24, 24, 0.3);
+    color: rgb(0, 0, 0);
 }
 
 footer {

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Krub:wght@300&family=PT+Sans:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="error.css">
     <title>Error</title>
 </head>
@@ -13,8 +16,14 @@
         <a id = "headername" href="index.html" >ФОП та Львівські Батяри</a>
     </div>
     <div class="page-container">
-        <p align="center">Сталася помилка. Будь ласка, спробуйте ще раз.</p>
+        <p class="message">Сталася помилка. Будь ласка, спробуйте ще раз.</p>
+        <button class="button" onclick="redirectToHomePage()">Повернутись на головну!</button>
     </div>
+    <script>
+        function redirectToHomePage() {
+            window.location.href = "index.html";
+        }
+    </script>
     <footer>
         <div class="footer-content">
             <p>©2024 by ФОП та Львівські Батяри</p>
