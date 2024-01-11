@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Krub:wght@300&family=PT+Sans:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="search.js"></script>
     <link rel="stylesheet" href="allposts.css">
     <title>All Posts</title>
 </head>
@@ -19,6 +20,12 @@
 <div class="main">
     <div class="allposts">
         <p>All Posts</p>
+        <div class="search-container">
+            <form id="searchForm" action="/search" method="get">
+                <input type="text" placeholder="Пошук..." name="q" onkeydown="handleEnterSearch(event)"/>
+                <button type="button" onclick="searchPosts()">Пошук</button>
+            </form>
+        </div>
     </div>
     <a class="post" href="/post/post1.html">
         <h4>Якийсь моцний проект номер 1</h4>
@@ -31,6 +38,39 @@
     </a>
     <a class="post" href="">
         <h4>Якийсь моцний проект номер 4</h4>
+    </a>
+    <a class="post" href="">
+        <h4>Якийсь моцний проект номер 5</h4>
+    </a>
+    <a class="post" href="">
+        <h4>Якийсь моцний проект номер 6</h4>
+    </a>
+    <a class="post" href="">
+        <h4>Якийсь моцний проект номер 7</h4>
+    </a>
+    <a class="post" href="">
+        <h4>Якийсь моцний проект номер 8</h4>
+    </a>
+    <a class="post" href="">
+        <h4>Якийсь моцний проект номер 9</h4>
+    </a>
+    <a class="post" href="">
+        <h4>Якийсь моцний проект номер 10</h4>
+    </a>
+    <a class="post" href="">
+        <h4>Якийсь моцний проект номер 11</h4>
+    </a>
+    <a class="post" href="">
+        <h4>Якийсь моцний проект номер 12</h4>
+    </a>
+    <a class="post" href="">
+        <h4>Якийсь моцний проект номер 13</h4>
+    </a>
+    <a class="post" href="">
+        <h4>Якийсь моцний проект номер 14</h4>
+    </a>
+    <a class="post" href="">
+        <h4>Якийсь моцний проект номер 15</h4>
     </a>
 </div>
 </div>
