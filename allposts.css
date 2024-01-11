@@ -57,14 +57,30 @@ body {
     align-items: center;
     color: black;
     border-bottom: 1px solid black;
+    min-width: 500px;
+}
+
+.allposts p {
+    font-size: 20px;
+    color: black;
 }
 
 .post {
-    height: 85px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 95px;
+    min-width: 500px;
     color: #000000;
     margin-bottom: 14.5px;
     border: 1px solid black;
+    text-decoration: none;
+}
+
+.post h4 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 footer {
