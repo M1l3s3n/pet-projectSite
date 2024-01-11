@@ -153,6 +153,7 @@ body {
     background-color: #ffffff;
     margin-top: 0;
     font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
 }
 
 .posts {
@@ -165,11 +166,11 @@ body {
 .postinfo {
     display: flex;
     position: absolute;
-    bottom: 30px;
+    bottom: 9px;
     left: 0;
     right: 0;
     border-top: 1px solid white;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
     z-index: 5;
     width: 85%;
@@ -179,12 +180,23 @@ body {
 
 .postinfo h4 {
     margin: 0;
-    margin-left: 47.14%;
+    margin-left: 72.4%;
 }
 
-.view-count {
-    margin-right: 5px;
-    text-decoration: none;
+.postauthor {
+    display: flex;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    right: 0;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    z-index: 5;
+    width: 85%;
+    margin: 0 auto;
+    color: black;
+    font-size: 17px;
+    border-bottom: 1px solid white;
 }
 
 .post {
@@ -215,7 +227,7 @@ body {
     padding: 15px;
     color: rgb(0, 0, 0);
     font-size: 26.5px;
-    bottom: 32px;
+    bottom: 20px;
 }
 
 .poststext {
@@ -224,6 +236,8 @@ body {
     font-size: 19px;
     margin-left: 18px;
     position: absolute;
+    text-decoration: none;
+    color: black;
 }
 
 .split-container {
