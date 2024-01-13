@@ -22,6 +22,10 @@ body {
     z-index: 500;
 }
 
+.header.hidden {
+    display: none;
+}
+
 #headername {
     color: rgb(255, 255, 255);
     text-align: center;

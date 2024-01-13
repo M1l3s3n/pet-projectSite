@@ -31,6 +31,10 @@ body {
     min-width: 290px;
 }
 
+.header.hidden {
+    display: none;
+}
+
 .maincontainer {
     flex: 1;
     display: flex;
@@ -147,14 +151,17 @@ footer {
 
     .maincontainer {
         padding: 10px;
+        padding-top: 0;
     }
 
     .allposts p {
         margin-top: 3px;
-        margin-bottom: 3px;
+        margin-bottom: 10px;
     }
 
     .main {
+        padding-top: 0;
+        margin-top: 0;
         margin: 10px 0;
     }
 
@@ -164,8 +171,9 @@ footer {
     }
 
     #searchForm {
-        margin-bottom: 10px;
+        margin-bottom: 14px;
         flex-direction: column;
+        border: 0;
     }
 
     .post {
