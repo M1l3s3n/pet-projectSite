@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Krub:wght@300&family=PT+Sans:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="post1.css">
     <title>Some project post 1</title>
 </head>
@@ -29,20 +31,26 @@
         <div class="text">Останні пости</div>
         <a class="all" href="../allposts.html">Дивитись усі</a>
     </div>
-    <div class="postgroup">
-        <div class="post1">
-            
-        </div>
-
-        <div class="post2">
-            
-        </div>
-
-        <div class="post3">
-            
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Замініть на свої дані постів -->
+            <div class="swiper-slide"> <img src="/images/3.jpg"></div>
+            <div class="swiper-slide"> <img src="/images/2.jpg"></div>
+            <div class="swiper-slide"> <img src="/images/1.jpg"></div>
+            <!-- Додайте більше слайдів за потребою -->
         </div>
     </div>
 </div>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </div>
     <footer>
         <div class="footer-content">

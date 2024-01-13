@@ -35,10 +35,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body    = "Ім'я: $name\nЕл.пошта: $email\nНомер телефону: $number\nАдреса: $address\nТема: $topic\nПовідомлення: $message";
 
         $mail->send();
-        echo "<p align=center>Вашого листа надіслано!</p>";
+        header("Location: success.html");
+        exit;
     } catch (Exception $e) {
-        echo "<p align=center>Помилка! Спробуйте ще раз.</p>";
-        echo 'Помилка при відправленні листа: ', $e->getMessage();
+        header("Location: error.html");
+        exit;
     }
 }
 ?>
