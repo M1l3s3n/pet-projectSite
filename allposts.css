@@ -4,9 +4,9 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    font-family: 'IBM Plex Sans', sans-serif;
     background-color: rgb(255, 255, 255);
     color: #fff;
-    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .header {
