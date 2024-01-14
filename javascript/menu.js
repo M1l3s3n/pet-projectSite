@@ -25,8 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             posts.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
-
-        
     });
 });
 

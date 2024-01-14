@@ -4,7 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     scrollToContactButton.addEventListener('click', function() {
        
-        contactBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (window.innerWidth <= 767) {
+            var contactBox = document.querySelector('.contactinfo');
+            contactBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+            contactBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
     });
 });
 
