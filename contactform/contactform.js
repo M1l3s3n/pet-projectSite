@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollToContactButton.addEventListener('click', function() {
        
         if (window.innerWidth <= 767) {
-            var contactBox = document.querySelector('.contactinfo');
-            contactBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            var littleContactBox = document.querySelector('.contactinfo');
+            littleContactBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
             contactBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
