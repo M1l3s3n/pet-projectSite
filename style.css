@@ -322,6 +322,11 @@ body {
     font-size: 25px;
     text-decoration: none;
     color: inherit;
+    transition: background-color 0.6s ease;
+}
+
+.sub-sub-box:hover {
+    background-color: rgb(35, 35, 35);
 }
 
 .sub-box:nth-child(2) .sub-sub-box p,
@@ -656,6 +661,10 @@ footer {
         align-items: center;
         padding-left: 0;
         font-size: 18px;
+    }
+
+    .sub-sub-box {
+        transition: none;
     }
 
     .right-box {
