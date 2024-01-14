@@ -141,6 +141,70 @@ body {
     object-fit: cover;
 }
 
+.post {
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+
+.post p {
+    text-align: left;
+    line-height: 38px;
+    margin-left: 18px;
+    position: absolute;
+    z-index: 1;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 24.5px;
+    bottom: 20px;
+}
+
+.post img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.8;
+}
+
+.postinfo {
+    display: flex;
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgb(223, 223, 223);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    z-index: 5;
+    width: 85%;
+    margin: 0 auto;
+    color: black;
+}
+
+.postinfo h4 {
+    margin: 0;
+    margin-left: 72.4%;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.postauthor {
+    display: flex;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    right: 0;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    z-index: 5;
+    width: 85%;
+    margin: 0 auto;
+    color: black;
+    font-size: 17px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
 footer {
     background-color: rgb(0, 0, 0);
     color: #fff;
@@ -170,6 +234,8 @@ footer {
 
     .main {
         margin: auto;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .allposts,
@@ -185,6 +251,33 @@ footer {
 
     .swiper-container {
         width: 50%;
+    }
+
+    .post p {
+        text-align: left;
+        line-height: 38px;
+        margin-left: 18px;
+        position: absolute;
+        z-index: 1;
+        padding: 15px;
+        color: rgb(0, 0, 0);
+        font-size: 19.5px;
+        bottom: 20px;
+    }
+
+    .postinfo h4 {
+        margin: 0;
+        margin-left: 67%;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .post img {
+        min-width: 100%;
+        min-height: 350px;
+        object-fit: cover;
+        display: block;
+        opacity: 0.8;
     }
 
     footer {
