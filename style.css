@@ -101,6 +101,11 @@ body {
     z-index: 500;
 }
 
+#scrollToTopBtn:hover {
+    background-color: rgb(187, 187, 187);
+    color: #000000;
+}
+
 .container {
     margin-top: 0; 
     position: relative;
