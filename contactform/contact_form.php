@@ -35,10 +35,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body    = "Ім'я: $name\nЕл.пошта: $email\nНомер телефону: $number\nАдреса: $address\nТема: $topic\nПовідомлення: $message";
 
         $mail->send();
-        header("Location: success.html");
+        header("Location: /alerts/success.css");
         exit;
     } catch (Exception $e) {
-        header("Location: error.html");
+        header("Location: /alerts/error.css");
         exit;
     }
 }
