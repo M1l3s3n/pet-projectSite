@@ -300,8 +300,8 @@ body {
     z-index: 1;
     padding: 15px;
     color: rgb(0, 0, 0);
-    font-size: 24.5px;
-    bottom: 20px;
+    font-size: 22.5px;
+    bottom: 5px;
 }
 
 .poststext {
@@ -704,6 +704,10 @@ footer {
     .postinfo {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .post p {
+        font-size: 18px;
     }
 
     .postinfo h4 {
