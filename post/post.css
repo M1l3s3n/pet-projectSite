@@ -260,13 +260,13 @@ footer {
     .post p {
         text-align: left;
         line-height: 38px;
-        margin-left: 18px;
+        margin-left: 10px;
         position: absolute;
         z-index: 1;
         padding: 15px;
         color: rgb(0, 0, 0);
         font-size: 19.5px;
-        bottom: 20px;
+        bottom: 10px;
     }
 
     .postinfo h4 {
