@@ -19,14 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();                            
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;  
-        $mail->Username   = 'bogdan.tyb9@gmail.com';
+        $mail->Username   = 'beusbrother@gmail.com';
         $mail->Password   = 'ytth ijcv dibe zzes';
         $mail->SMTPSecure = 'tls';                            
         $mail->Port       = 587;
 
         // Recipients
         $mail->setFrom($email);
-        $mail->addAddress('bogdan.tyb9@gmail.com');
+        $mail->addAddress('beusbrother@gmail.com');
 
         // Content
         $mail->isHTML(false);
